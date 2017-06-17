@@ -4,7 +4,7 @@ from random import *
 
 def random_digits():
     range_start = 1
-    range_end = 55
+    range_end = 545
     return randint(range_start, range_end)
 def getJoke():
     with open('data.json') as data_file:
