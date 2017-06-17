@@ -13,9 +13,9 @@ api = Api(app)
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-class API(Resource):
+class APP(Resource):
     def get(self):
-        return {'this is should become a ->': 'website'}
+        return {'this is soon to become an awesome->': 'website'}
 
     def post(self):
         jk = joke.getJoke()
@@ -23,7 +23,15 @@ class API(Resource):
         #jk = jk.encode('utf-8')
         return jk
 
-api.add_resource(API, '/')
+class API(Resource):
+    def get(self):
+        jk = joke.getJoke()
+        jk = jk.encode('ascii', 'ignore').decode('ascii')
+        # jk = jk.encode('utf-8')
+        return jk
+
+api.add_resource(APP, '/')
+api.add_resource(API, '/api')
 
 if __name__ == '__main__':
     app.run(debug=True)
