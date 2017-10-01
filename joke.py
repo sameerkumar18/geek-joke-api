@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 import json
-from random import *
+import random
 
-def random_digits():
-    range_start = 1
-    range_end = 545
-    return randint(range_start, range_end)
-def getJoke():
+
+def random_digits(item_count):
+    return random.randint(0, item_count)
+
+
+def get_joke():
     with open('data.json') as data_file:
         data = json.load(data_file)
-    joke = data[random_digits()]
-    print joke
-    return joke
+    return data[random_digits(len(data))]
