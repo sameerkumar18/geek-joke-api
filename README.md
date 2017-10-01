@@ -11,12 +11,45 @@ The Geek Jokes RESTful API lets you fetch a random geeky/programming related jok
 The Geek Jokes api is for any developer needing some random (geeky) jokes in their life or application.
 
 ## URL
-There isn't one yet, but one may be planned in the future. For now, host the api on your own server.
+```
+GET: https://geek-jokes.herokuapp.com/api
+```
 
 ## Usage
 Just do a GET request on the API URL.
 ```
-GET: api-url
+GET: https://geek-jokes.herokuapp.com/api
+```
+
+Examples
+##########
+
+##cURL
+```
+curl -X GET \
+'https://geek-jokes.herokuapp.com/api'
+```
+
+## Python
+```Python
+import requests
+
+requests.get('https://geek-jokes.herokuapp.com/api')
+```
+
+## Node.js (es6)
+```Javascript
+var request = require('request');
+
+let options = {
+    url: 'https://geek-jokes.herokuapp.com/api',
+    method: 'GET'
+}
+
+request(options, (err, response, body) => {
+    if(!err && response.statusCode == 200)
+        console.log(body)
+});
 ```
 
 ## License
