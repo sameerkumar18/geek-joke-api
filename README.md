@@ -21,23 +21,22 @@ Just do a GET request on the API URL.
 GET: https://geek-jokes.herokuapp.com/api
 ```
 
-Examples
-##########
+## Examples
 
-##cURL
+### cURL
 ```
 curl -X GET \
 'https://geek-jokes.herokuapp.com/api'
 ```
 
-## Python
+### Python
 ```Python
 import requests
 
 requests.get('https://geek-jokes.herokuapp.com/api')
 ```
 
-## Node.js (es6)
+### Node.js (es6)
 ```Javascript
 var request = require('request');
 
