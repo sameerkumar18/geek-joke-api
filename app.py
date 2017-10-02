@@ -15,7 +15,7 @@ sys.setdefaultencoding('utf-8')
 
 class APP(Resource):
     def get(self):
-        return {'this is soon to become an awesome->': 'website'}
+        return {'this is soon to become an awesome-->': 'website'}
 
     def post(self):
         jk = joke.getJoke()
