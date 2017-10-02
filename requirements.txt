@@ -7,6 +7,7 @@ Flask-RESTful==0.3.6
 gunicorn==19.7.0
 httplib2==0.9.2
 idna==2.6
+itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==1.0
 pkg-resources==0.0.0
@@ -15,4 +16,5 @@ pytz==2017.2
 requests==2.18.4
 six==1.11.0
 urllib3==1.22
+virtualenv==15.1.0
 Werkzeug==0.11.10
