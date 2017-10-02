@@ -12,5 +12,5 @@ def get_joke():
     with open('data.json') as data_file:
         data = json.load(data_file)
     joke = data[random_digits(len(data))]
-    print joke
+    print(joke)
     return joke
