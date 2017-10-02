@@ -50,6 +50,8 @@ request(options, (err, response, body) => {
         console.log(body)
 });
 ```
+ ### Any browser
+ visit the url: https://geek-jokes.herokuapp.com/api to get a joke. Press refresh button for more jokes.
 
 ## License
 MIT
