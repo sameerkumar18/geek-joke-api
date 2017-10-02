@@ -1,0 +1,1 @@
+JOKE_FILE = 'data.json'
