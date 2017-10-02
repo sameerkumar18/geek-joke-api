@@ -13,22 +13,16 @@ sys.setdefaultencoding('utf-8')
 class APP(Resource):
 
     def get(self):
+    # function is called when the user makes a GET request to / endpoint.
         return {'this is soon to become an awesome->': 'website'}
-
-
-    def post(self):
-        jk = joke.getJoke()
-        jk = jk.encode('ascii', 'ignore').decode('ascii')
-        #jk = jk.encode('utf-8')
-        return jk
 
 
 class API(Resource):
 
     def get(self):
+    # function is called when the user makes a GET request to /api endpoint.    
         jk = joke.getJoke()
         jk = jk.encode('ascii', 'ignore').decode('ascii')
-        # jk = jk.encode('utf-8')
         return jk
 
 
