@@ -17,10 +17,12 @@ def index():
         response = "this is soon to become an awesome-> : website"
         return jsonify(response)
     else:
+
         jk = joke.getJoke()
         jk = jk.encode('ascii', 'ignore').decode('ascii')
         #jk = jk.encode('utf-8')
         return jk
+
 
 class API(Resource):
     def get(self):
@@ -28,7 +30,6 @@ class API(Resource):
         jk = jk.encode('ascii', 'ignore').decode('ascii')
         # jk = jk.encode('utf-8')
         return jk
-
 api.add_resource(API, '/api')
 
 if __name__ == '__main__':
