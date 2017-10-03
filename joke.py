@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
-from random import *
-
+from random import randint
 
 def random_digits(joke_count):
     # Return a joke index between first and last joke in data
