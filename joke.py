@@ -3,9 +3,8 @@ import json
 from random import randint
 
 
-def get_joke():
-    # Return random joke
+def getJoke():
+    # return a random joke loaded from the data.json
     with open('data.json') as data_file:
         data = json.load(data_file)
-    joke = data[randint(1, len(data))]
-    return joke
+    return data[randint(1, len(data))]
