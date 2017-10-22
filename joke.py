@@ -1,16 +1,10 @@
 # -*- coding: utf-8 -*-
 import json
-from random import *
+from random import randint
 
 
-def random_digits(joke_count):
-    # Return a joke index between first and last joke in data
-    return randint(1, joke_count)
-
-def get_joke():
-    # Return random joke
+def getJoke():
+    # return a random joke loaded from the data.json
     with open('data.json') as data_file:
         data = json.load(data_file)
-    joke = data[random_digits(len(data))]
-    print joke
-    return joke
+    return data[randint(0, len(data) - 1)]

@@ -11,25 +11,16 @@ sys.setdefaultencoding('utf-8')
 
 
 class APP(Resource):
-
     def get(self):
         return {'this is soon to become an awesome->': 'website'}
 
-
     def post(self):
-        jk = joke.getJoke()
-        jk = jk.encode('ascii', 'ignore').decode('ascii')
-        #jk = jk.encode('utf-8')
-        return jk
+        return joke.getJoke()
 
 
 class API(Resource):
-
     def get(self):
-        jk = joke.getJoke()
-        jk = jk.encode('ascii', 'ignore').decode('ascii')
-        # jk = jk.encode('utf-8')
-        return jk
+        return joke.getJoke()
 
 
 api.add_resource(APP, '/')
