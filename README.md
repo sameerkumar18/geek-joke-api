@@ -12,13 +12,13 @@ The Geek Jokes api is for any developer needing some random (geeky) jokes in the
 
 ## URL
 ```
-GET: https://geek-jokes.herokuapp.com/api
+GET: https://geek-jokes.sameerkumar.website/api
 ```
 
 ## Usage
 Just do a GET request on the API URL.
 ```
-GET: https://geek-jokes.herokuapp.com/api
+GET: https://geek-jokes.sameerkumar.website/api
 ```
 
 ## Examples
@@ -26,14 +26,14 @@ GET: https://geek-jokes.herokuapp.com/api
 ### cURL
 ```
 curl -X GET \
-'https://geek-jokes.herokuapp.com/api'
+'https://geek-jokes.sameerkumar.website/api'
 ```
 
 ### Python
 ```Python
 import requests
 
-requests.get('https://geek-jokes.herokuapp.com/api')
+requests.get('https://geek-jokes.sameerkumar.website/api')
 ```
 
 ### Node.js (es6)
@@ -41,7 +41,7 @@ requests.get('https://geek-jokes.herokuapp.com/api')
 var request = require('request');
 
 let options = {
-    url: 'https://geek-jokes.herokuapp.com/api',
+    url: 'https://geek-jokes.sameerkumar.website/api',
     method: 'GET'
 }
 
@@ -51,7 +51,7 @@ request(options, (err, response, body) => {
 });
 ```
  ### Any browser
- visit the url: https://geek-jokes.herokuapp.com/api to get a joke. Press refresh button for more jokes.
+ visit the url: https://geek-jokes.sameerkumar.website/api to get a joke. Press refresh button for more jokes.
 
 ## License
 MIT
