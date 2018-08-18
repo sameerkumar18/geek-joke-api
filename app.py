@@ -3,11 +3,13 @@ from flask import Flask
 from flask_restful import Resource, Api
 import joke
 import sys
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)
 reload(sys)
 sys.setdefaultencoding('utf-8')
+CORS(app)
 
 
 class APP(Resource):
