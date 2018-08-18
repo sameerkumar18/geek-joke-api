@@ -19,7 +19,7 @@ class APP(Resource):
 
 
     def post(self):
-        jk = joke.getJoke()
+        jk = joke.get_joke()
         jk = jk.encode('ascii', 'ignore').decode('ascii')
         #jk = jk.encode('utf-8')
         return jk
@@ -28,7 +28,7 @@ class APP(Resource):
 class API(Resource):
 
     def get(self):
-        jk = joke.getJoke()
+        jk = joke.get_joke()
         jk = jk.encode('ascii', 'ignore').decode('ascii')
         # jk = jk.encode('utf-8')
         return jk
