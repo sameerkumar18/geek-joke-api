@@ -38,4 +38,4 @@ api.add_resource(APP, '/')
 api.add_resource(API, '/api')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
