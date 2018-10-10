@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
-from random import *
+from random import randint
 
 
 def random_digits(joke_count):
