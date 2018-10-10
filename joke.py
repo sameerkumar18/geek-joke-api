@@ -9,8 +9,8 @@ def random_digits(joke_count):
 
 def get_joke():
     # Return random joke
-    with open('data.json') as data_file:
+    with open('data.json', encoding="utf8") as data_file:
         data = json.load(data_file)
     joke = data[random_digits(len(data))]
-    print joke
+    print(joke)
     return joke
