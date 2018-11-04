@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask
+from flask import Flask, jsonify
 from flask_restful import Resource, Api
 import joke
 import sys
@@ -14,13 +14,13 @@ CORS(app)
 class APP(Resource):
 
     def get(self):
-        return {
+        return jsonify({
 		'author' : 'Sameer Kumar',
 		'author_url' : 'https://www.sameerkumar.website',
 		'base_url' : 'https://geek-jokes.sameerkumar.website',
 	    'project_name' : 'Geek Joke API',
 		'project_url' : 'https://github.com/sameerkumar18/geek-joke-api'
-	}
+	})
 
 
     def post(self):
