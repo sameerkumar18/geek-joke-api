@@ -14,7 +14,13 @@ CORS(app)
 class APP(Resource):
 
     def get(self):
-        return {'this is soon to become an awesome->': 'website'}
+        return {
+		'author' : 'Sameer Kumar',
+		'author_url' : 'https://www.sameerkumar.website',
+		'base_url' : 'https://geek-jokes.sameerkumar.website',
+	    'project_name' : 'Geek Joke API',
+		'project_url' : 'https://github.com/sameerkumar18/geek-joke-api'
+	}
 
 
     def post(self):
