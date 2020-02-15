@@ -25,8 +25,6 @@ class APP(Resource):
 
     def post(self):
         jk = joke.get_joke()
-        jk = jk.encode('ascii', 'ignore').decode('ascii')
-        #jk = jk.encode('utf-8')
         return jk
 
 
@@ -34,8 +32,6 @@ class API(Resource):
 
     def get(self):
         jk = joke.get_joke()
-        jk = jk.encode('ascii', 'ignore').decode('ascii')
-        # jk = jk.encode('utf-8')
         return jk
 
 
@@ -43,4 +39,4 @@ api.add_resource(APP, '/')
 api.add_resource(API, '/api')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
