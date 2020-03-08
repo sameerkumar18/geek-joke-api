@@ -11,4 +11,4 @@ def get_joke():
     # Return random joke
     random_num = randint(1, JOKE_COUNT)
     joke = data[random_num]
-    return joke.replace('\"', "'") + str(random_num)
+    return joke.replace('\"', "'")
