@@ -2,14 +2,13 @@
 import json
 from random import randint
 
+with open('data.json', encoding='utf-8-sig') as data_file:
+    data = json.load(data_file)
+JOKE_COUNT = len(data)
 
-def random_digits(joke_count):
-    # Return a joke index between first and last joke in data
-    return randint(1, joke_count)
 
 def get_joke():
     # Return random joke
-    with open('data.json', encoding="utf8") as data_file:
-        data = json.load(data_file)
-    joke = data[random_digits(len(data))]
-    return joke
+    random_num = randint(1, JOKE_COUNT)
+    joke = data[random_num]
+    return joke.replace('\"', "'")

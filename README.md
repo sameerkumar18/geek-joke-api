@@ -1,6 +1,6 @@
 # Geek-Jokes
 
-## A Flask RESTful API to get random geek jokes
+## A RESTful API to get random geek jokes written in Flask
 [![forthebadge](http://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/gluten-free.svg)](http://forthebadge.com)
 
@@ -12,13 +12,13 @@ The Geek Jokes api is for any developer needing some random (geeky) jokes in the
 
 ## URL
 ```
-GET: https://geek-jokes.sameerkumar.website/api
+GET: https://geek-jokes.sameerkumar.website/api?format=json
 ```
 
 ## Usage
 Just do a GET request on the API URL.
 ```
-GET: https://geek-jokes.sameerkumar.website/api
+GET: https://geek-jokes.sameerkumar.website/api?format=json
 ```
 
 ## Examples
@@ -26,14 +26,14 @@ GET: https://geek-jokes.sameerkumar.website/api
 ### cURL
 ```
 curl -X GET \
-'https://geek-jokes.sameerkumar.website/api'
+'https://geek-jokes.sameerkumar.website/api?format=json'
 ```
 
 ### Python
 ```Python
 import requests
 
-requests.get('https://geek-jokes.sameerkumar.website/api')
+requests.get('https://geek-jokes.sameerkumar.website/api?format=json')
 ```
 
 ### Node.js (es6)
@@ -41,7 +41,7 @@ requests.get('https://geek-jokes.sameerkumar.website/api')
 var request = require('request');
 
 let options = {
-    url: 'https://geek-jokes.sameerkumar.website/api',
+    url: 'https://geek-jokes.sameerkumar.website/api?format=json',
     method: 'GET'
 }
 
@@ -51,10 +51,14 @@ request(options, (err, response, body) => {
 });
 ```
  ### Any browser
- visit the url: https://geek-jokes.sameerkumar.website/api to get a joke. Press refresh button for more jokes.
+ visit the url: https://geek-jokes.sameerkumar.website/api?format=json to get a joke. Press refresh button for more jokes.
 
 ## License
 MIT
 
 ## Contact
-Contact me here: [sameer18051998@gmail.com](mailto:sameer18051998@gmail.com)
+Contact: [sam@sameerkumar.website](mailto:sam@sameerkumar.website)
+
+## Author
+Sameer Kumar
+https://sameerkumar.website
