@@ -21,6 +21,15 @@ Just do a GET request on the API URL.
 GET: https://geek-jokes.sameerkumar.website/api?format=json
 ```
 
+## Projects using Geek Jokes API
+
+Repository | Description
+---- | ----
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+Used Geek Jokes API in your project? Check out the [contributing guidelines](https://github.com/sameerkumar18/geek-joke-api/blob/master/contributing.md) for this list and let us know. we love PRs :)
+
 ## Examples
 
 ### cURL
