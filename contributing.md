@@ -2,7 +2,7 @@
 
 Please follow the instructions below to make a contribution.
 
-This resource was made by the developers and hackers alike! We appreciate and recognize all [contributors](#contributors).
+This resource was made by the developers and hackers alike! We appreciate and recognize all [contributors](https://github.com/sameerkumar18/geek-joke-api/graphs/contributors).
 
 ## Table of Content
 
