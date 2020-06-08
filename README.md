@@ -21,6 +21,15 @@ Just do a GET request on the API URL.
 GET: https://geek-jokes.sameerkumar.website/api?format=json
 ```
 
+## Projects using Geek Jokes API
+
+Repository | Description
+---- | ----
+[Random. Django. Rango.](https://github.com/powerhouseofthecell/rango) | Random. Django. Rango. An introduction to using Python and Django to build a website.
+[tellmejoke](https://github.com/MunafHajir/-tellmeajoke) | VS Code Extension that tells you a joke
+
+Used Geek Jokes API in your project? Check out the [contributing guidelines](https://github.com/sameerkumar18/geek-joke-api/blob/master/contributing.md) for this list and let us know. we love PRs :)
+
 ## Examples
 
 ### cURL
