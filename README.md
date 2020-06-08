@@ -25,8 +25,8 @@ GET: https://geek-jokes.sameerkumar.website/api?format=json
 
 Repository | Description
 ---- | ----
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+[Random. Django. Rango.](https://github.com/powerhouseofthecell/rango) | Random. Django. Rango. An introduction to using Python and Django to build a website.
+[tellmejoke](https://github.com/MunafHajir/-tellmeajoke) | VS Code Extension that tells you a joke
 
 Used Geek Jokes API in your project? Check out the [contributing guidelines](https://github.com/sameerkumar18/geek-joke-api/blob/master/contributing.md) for this list and let us know. we love PRs :)
 
