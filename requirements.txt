@@ -1,4 +1,4 @@
-Flask==2.2.2
+Flask==3.1.0
 gunicorn==21.2.0
 flask-restful==0.3.10
 flask-cors==3.0.9
